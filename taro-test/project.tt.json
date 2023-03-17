@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "mall362",
+  "appid": "touristappid",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
