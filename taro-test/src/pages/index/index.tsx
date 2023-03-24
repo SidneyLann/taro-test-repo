@@ -44,7 +44,7 @@ export default class Index extends Component<PropsWithChildren> {
   
   chooseImage = (event) => {
       Taro.chooseImage({
-          count: 3,
+          count: 4,
           success: (result) => {
               const images = result.tempFiles;
               images.forEach((item, idx) => {
