@@ -19,7 +19,7 @@ export default class Index extends Component<PropsWithChildren> {
 
   componentDidHide () { }
 
-   uploadSingleFile = (file, succ, err) => {
+  uploadSingleFile = (file, succ, err) => {
       if (file.size > 10 * 1024 * 1024) {
           throw Error('鏂囦欢涓嶈兘澶т簬10鍏�');
       }
