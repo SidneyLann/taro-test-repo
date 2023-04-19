@@ -68,8 +68,7 @@ export default class Index extends Component<PropsWithChildren> {
 		//this.setState({ [name]: selectedValues });
 		this.setState({ "checkedList": selectedValues });
   }
-	
-	
+
   render () {
 	const options = [];
     options.push({ value: 1, label: 'CheckBox1' })
