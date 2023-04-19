@@ -21,7 +21,7 @@ export default class Index extends Component<PropsWithChildren> {
 
    uploadSingleFile = (file, succ, err) => {
       if (file.size > 10 * 1024 * 1024) {
-          throw Error('文件不能大于10兆');
+          throw Error('鏂囦欢涓嶈兘澶т簬10鍏�');
       }
 
       const header = {}
@@ -64,7 +64,7 @@ export default class Index extends Component<PropsWithChildren> {
       })
   }
   
-	onCheckBoxesChanged = (name, selectedValues) => {
+  onCheckBoxesChanged = (name, selectedValues) => {
 		//this.setState({ [name]: selectedValues });
 		this.setState({ "checkedList": selectedValues });
 	}
