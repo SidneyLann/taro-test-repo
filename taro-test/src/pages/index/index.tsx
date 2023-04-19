@@ -77,7 +77,8 @@ export default class Index extends Component<PropsWithChildren> {
     const checkedList = this.state.checkedList
 	console.log(checkedList)
 	
-    return (<View>
+    return (
+        <View>
         <Button onClick={this.chooseImage}>+</Button>
         
 		<CheckBoxes name='checkedList'
