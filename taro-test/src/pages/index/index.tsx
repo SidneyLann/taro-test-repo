@@ -5,11 +5,12 @@ import CheckBoxes from './CheckBoxes.tsx'
 import './index.scss'
 
 export default class Index extends Component<PropsWithChildren> {
-    constructor(props) {
+  constructor(props) {
         super(props)
         this.state = {
 		checkedList: [1]
-	}}
+  }
+  }
 	
   componentDidMount () { }
 
