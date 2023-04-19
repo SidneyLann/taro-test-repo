@@ -66,7 +66,7 @@ export default class Index extends Component<PropsWithChildren> {
   
   onCheckBoxesChanged = (name, selectedValues) => {
 	//this.setState({ [name]: selectedValues });
-		this.setState({ "checkedList": selectedValues });
+	this.setState({ "checkedList": selectedValues });
   }
 
   render () {
