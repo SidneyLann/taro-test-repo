@@ -72,6 +72,7 @@ export default class Index extends Component<PropsWithChildren> {
   render () {
 	const options = [];
     options.push({ value: 1, label: 'CheckBox1' })
+    
     options.push({ value: 3, label: 'CheckBox2' })
 	
     const checkedList = this.state.checkedList
