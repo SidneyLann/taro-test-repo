@@ -69,6 +69,10 @@ export default class Index extends Component<PropsWithChildren> {
 	//this.setState({ [name]: selectedValues });
 	this.setState({ "checkedList": selectedValues });
   }
+  
+  encode = (event) => {
+    Taro.navigateTo({ url: 'pages/index/Chinese?chinese=中文'})
+  }
 
   render () {
 	const options = [];
@@ -80,14 +84,8 @@ export default class Index extends Component<PropsWithChildren> {
 	
     return (
         <View>
-        <Button onClick={this.chooseImage}>+</Button>
-        
-		<CheckBoxes name='checkedList'
-					options={options}
-				    value={checkedList}
-				    onChange={this.onCheckBoxesChanged}
-	     />
-         </View>
+          <Button onClick={this.encode}>中文</Button>
+        </View>
     )
   }
 }

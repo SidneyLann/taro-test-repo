@@ -13,7 +13,7 @@ class CheckBoxes extends React.Component {
     const value = this.props.value;
 
     return (
-    <CheckboxGroup value={this.props.value} onChange={this.onGroupChanged}>
+    <CheckboxGroup  onChange={this.onGroupChanged}>
     {options.map((option, idx) => {
      const isChecked = value? value.includes(option.value)? true: false: false;
      
