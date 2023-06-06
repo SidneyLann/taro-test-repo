@@ -1,8 +1,7 @@
 import { Component, PropsWithChildren } from 'react'
 import Taro from '@tarojs/taro'
 import { View, Button } from '@tarojs/components'
-import CheckBoxes from './CheckBoxes.tsx'
-import './Chinese.scss'
+import { Current } from '@tarojs/taro'
 
 export default class Chinese extends Component<PropsWithChildren> {
   constructor(props) {
@@ -26,7 +25,7 @@ export default class Chinese extends Component<PropsWithChildren> {
 	
     return (
         <View>
-          {this.params.chinese}
+          {this.params.content}
         </View>
     )
   }

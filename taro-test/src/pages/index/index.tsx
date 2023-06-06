@@ -71,7 +71,7 @@ export default class Index extends Component<PropsWithChildren> {
   }
   
   encode = (event) => {
-    Taro.navigateTo({ url: 'pages/index/Chinese?chinese=中文'})
+    Taro.navigateTo({ url: 'pages/index/Chinese?content=中文'})
   }
 
   render () {
