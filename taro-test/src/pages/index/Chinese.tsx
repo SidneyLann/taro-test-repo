@@ -38,7 +38,7 @@ class Chinese extends Component<PropsWithChildren> {
 	
     return (
         <View>
-          <input0 value={this.params.content} />
+          <input0 value={this.params.content} width={'200px'}/>
         </View>
     )
   }
