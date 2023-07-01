@@ -38,7 +38,7 @@
     "Android >= 4.1",
     "ios >= 8"
   ],
-  "author": "Sidney",
+  "author": "Tom",
   "dependencies": {
     "@babel/runtime": "^7.22.5",
     "@bam.tech/react-native-image-resizer": "~3.0.4",
