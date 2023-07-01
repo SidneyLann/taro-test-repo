@@ -6,5 +6,5 @@ module.exports = {
   },
   mini: {},
   h5: {},
-  rn: {}
+  rn: {},
 }
