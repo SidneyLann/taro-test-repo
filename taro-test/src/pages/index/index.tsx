@@ -27,7 +27,7 @@ export default class Index extends Component<PropsWithChildren> {
 
       const header = {}
       //header['content-type'] = 'multipart/form-data'
-      header['token'] = "ey3JhbGciOiJIUllcyI6WyIxMjExMTEiLCI5MDAwMDQiLCIxMTk4MTQiLCITMwMTEiLCIxMDAwMDQiLCIxMTMwNTEiLCIxMjE4MTQiLCIxMDAwMDgiXSwiaXNzIjoicGNuZy1zcnYtYXV0aCIsImF1ZCI6IndlYiIsImlhdCI6MTY3OTUzNTM5MSwiZXhwIjoxNjgwMzk5MzkxfQ.LlgV8loR8bTyWwcN4gPc-kDysugoQSuotKOIWW_G3RHfz8NsXvFKJvOVN7He5t7Pr-QYmcdZgmlwbi8ODsMzlQ"
+      header['token'] = "ey3JhbGciOiJIUllcyI6WyIxMjExMTEiLCI5MDAwMDQiLCIiLCIxMjE4MTQiLCIxMDAwMDgiXSwiaXNzIjoicGNuZy1zcnYtYXV0aCIsImF1ZCI6IndlYiIsImlhdCI6MTY3OTUzNTM5MSwiZXhwIjoxNjgwMzk5MzkxfQ.LlgV8loR8bTyWwcN4gPc-kDysugoQSuotKOIWW_G3RHfz8NsXvFKJvOVN7He5t7Pr-QYmcdZgmlwbi8ODsMzlQ"
 
       const params = {
           url: "https://www.pc8g.com/pcng-biz-member/sys/file/upload",
