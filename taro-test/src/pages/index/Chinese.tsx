@@ -1,9 +1,22 @@
 import { Component, PropsWithChildren } from 'react'
+import { styled } from '@linaria/react'
 import Taro from '@tarojs/taro'
-import { View, Button } from '@tarojs/components'
+import { View, Button, Input } from '@tarojs/components'
 import { Current } from '@tarojs/taro'
 
-export default class Chinese extends Component<PropsWithChildren> {
+const Input0 = styled(Input)<{ width: string}>`
+display: flex;
+flex-direction: row;
+position: relative;
+text-align: center;
+width: ${props => props.width};
+height: 25px;
+border-style: solid;
+border-width: 1px;
+border-color: rgba(0,255,255,1)
+`
+
+class Chinese extends Component<PropsWithChildren> {
   constructor(props) {
         super(props)
 
@@ -25,8 +38,10 @@ export default class Chinese extends Component<PropsWithChildren> {
 	
     return (
         <View>
-          {this.params.content}
+          <input0 value={this.params.content} />
         </View>
     )
   }
 }
+
+export default Chinese
