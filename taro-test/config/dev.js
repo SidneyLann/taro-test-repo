@@ -4,7 +4,23 @@ module.exports = {
   },
   defineConstants: {
   },
-  mini: {},
-  h5: {},
-  rn: {},
+  mini: {
+    debugReact:true,
+  },
+  h5: {
+    devServer: {
+        proxy: {
+            '/api/': {
+                target: "https://www.pc8g.com",
+                ws: true,
+                changeOrigin: true,
+                pathRewrite: {
+                  '^/api/': ''
+                },
+            }
+        }
+    }
+  },
+  rn: {
+  }
 }
