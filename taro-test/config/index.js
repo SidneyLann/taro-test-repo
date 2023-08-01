@@ -25,7 +25,7 @@ const config = {
   framework: 'react',
   compiler: 'webpack5',
   cache: {
-    enable: true
+    enable: true // Webpack 持久化缓存配置，建议开启。默认配置请参考：https://docs.taro.zone/docs/config-detail#cache
   },
   mini: {
     webpackChain(chain, webpack) {
@@ -47,11 +47,11 @@ const config = {
       url: {
         enable: true,
         config: {
-          limit: 1024 
+          limit: 1024 // 设定转换尺寸上限
         }
       },
       cssModules: {
-        enable: true, 
+        enable: true, // 默认为 false，如需使用 css modules 功能，则设为 true
         config: {
           namingPattern: 'module', // 转换模式，取值为 global/module
           generateScopedName: '[name]__[local]___[hash:base64:5]'
@@ -63,12 +63,23 @@ const config = {
     publicPath: '/h5',
     staticDirectory: 'static',
     webpackChain(chain, webpack) {
-      chain.module
-        .rule('script')
-        .use('linariaLoader')
-        .loader('@linaria/webpack5-loader')
-        .options({
-          sourceMap: process.env.NODE_ENV !== 'production',
+     chain.merge({
+          module: {
+            rule: {
+              linariaLoader: {
+                test: /\.tsx$/,
+                use: [
+                  { loader: 'babel-loader' },
+                  {
+                    loader: '@linaria/webpack5-loader',
+                    options: {
+                      sourceMap: process.env.NODE_ENV !== 'production',
+                    },
+                  }
+                ],
+              },
+            },
+          },
         })
     },
   },
