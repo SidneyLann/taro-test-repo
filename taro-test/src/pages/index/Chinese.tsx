@@ -11,7 +11,7 @@ flex-direction: row;
 position: relative;
 text-align: center;
 width: ${props => props.width};
-height: 25px;
+height: 50px;
 border-style: solid;
 border-width: 1px;
 border-color: rgba(0,255,255,1)
@@ -39,7 +39,7 @@ class Chinese extends Component<PropsWithChildren> {
 	
     return (
         <View>
-          <input0 value={this.params.content} width={'200px'} />
+          <Input0 value={this.params.content} width={'200px'} />
           <GeneralButton >test</GeneralButton>
         </View>
     )

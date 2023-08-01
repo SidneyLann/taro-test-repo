@@ -84,7 +84,7 @@ export default class Index extends Component<PropsWithChildren> {
 	
     return (
         <View>
-        <CheckBoxes options={options} />
+        <CheckBoxes options={options} onChange={this.onCheckBoxesChanged} />
           <Button onClick={this.encode}>中文</Button>
         </View>
     )
