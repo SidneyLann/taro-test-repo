@@ -3,6 +3,7 @@ import { styled } from '@linaria/react'
 import Taro from '@tarojs/taro'
 import { View, Button, Input } from '@tarojs/components'
 import { Current } from '@tarojs/taro'
+import GeneralButton from './GeneralButton'
 
 const Input0 = styled(Input)<{ width: string}>`
 display: flex;
@@ -39,6 +40,7 @@ class Chinese extends Component<PropsWithChildren> {
     return (
         <View>
           <input0 value={this.params.content} width={'200px'}/>
+          <GeneralButton >test</GeneralButton>
         </View>
     )
   }
