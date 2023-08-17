@@ -1,8 +1,8 @@
 {
-  "name": "pcgmall",
+  "name": "taro-test",
   "version": "1.0.0",
   "private": true,
-  "description": "柏君商城pc8g.com",
+  "description": "fs.com",
   "templateInfo": {
     "name": "react-native",
     "typescript": true,
