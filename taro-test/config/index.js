@@ -34,7 +34,7 @@ const config = {
         .use('linariaLoader')
         .loader('@linaria/webpack5-loader')
         .options({
-          sourceMap: process.env.NODE_ENV !== 'production',
+          sourceMap: is_dev,
         })
     },
     postcss: {
